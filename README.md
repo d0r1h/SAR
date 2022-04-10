@@ -1,3 +1,1 @@
-# SAR : Hindi Text Summarizer 
-
-sar (सार) in hindi means summary.  
+sar (सार) in hindi means summary. This repo contains my work on Text Summarization 
