@@ -1,1 +1,5 @@
-sar (सार) in hindi means summary. This repo contains my work on Text Summarization 
+SAR (सार) in Hindi means summary. This repository contains my work on Text Summarization 
+
+
+YouTube Summarization
+Hindi News Summarization
