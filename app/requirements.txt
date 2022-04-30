@@ -1,0 +1,8 @@
+torch
+gradio
+wordcloud
+matplotlib
+transformers
+sentencepiece 
+beautifulsoup4
+indic-nlp-library
