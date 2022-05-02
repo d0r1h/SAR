@@ -20,10 +20,68 @@
 </h4>
 
 <h3 align="center">
-    <a href="https://hf.co/course"><img src="https://github.com/d0r1h/SAR/blob/main/assets/sar_app.png", width="550"></a>
+    <a href="https://huggingface.co/spaces/d0r1h/Hindi_News_Summarizer"><img src="https://github.com/d0r1h/SAR/blob/main/assets/sar_app.png", width="550"></a>
 </h3>
 
-SAR (सार) in Hindi means summary. This repository contains my work on Text Summarization 
+SAR (सार) in Hindi means summary. This repository contains my work on Hindi Text Summarization on news article.  
 
 
+### Notebook:
 
+| Notebook | Colab | Kaggle |
+| ------ | ------ | ------ |
+| BaseLine | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/d0r1h/SAR/blob/main/notebooks/baseline.ipynb) | [![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://www.kaggle.com/code/undersc0re/hindi-text-summarization-baseline) |
+
+
+### DataSet:
+
+* As of now I've released a sample Dataset of 2k pairs of text and summary which can be accessed at [Link](https://github.com/d0r1h/SAR/tree/main/dataset)
+
+
+### Models:
+
+* Inference results are on 2k sample data.
+
+|Model | Checkpoint | Rouge-2[f_score] | checkpoint_link | Inference time | 
+|--- | --- | --- | --- | --- |
+|BART | ai4bharat/IndicBART | 21.48 | [🤗](https://huggingface.co/ai4bharat/IndicBART) | 20min 27s |
+|T5 | csebuetnlp/mT5_multilingual_XLSum | 20.21 | [🤗](https://huggingface.co/csebuetnlp/mT5_multilingual_XLSum) | 45min 54s|
+
+
+### Project Pipeline
+
+<h3 align="center">
+    <img src="https://github.com/d0r1h/SAR/blob/main/assets/SAR.png", width="550"></a>
+</h3>
+
+
+### API
+
+You can summarize any Hindi news article in just 5 lines of code
+
+```python
+>>> import requests
+>>> api_endpoint = "https://hf.space/embed/d0r1h/Hindi_News_Summarizer/+/api/predict/"
+>>> news_url = "https://www.amarujala.com/uttar-pradesh/shamli/up-news-heroin-caught-in-shaheen-bagh-of-delhi-is-connection-to-kairana-and-muzaffarnagar?src=tlh\u0026position=3"
+>>> r = requests.post(url= api_endpoint, 
+                  json = {"data": [ news_url, "BART"]})
+>>> r.json()['data'][0]
+>>> यूपी शाहीन बाग में 100 करोड़ रुपये कीमत की हेरोइन और अन्य मादक पदार्थ की बरामदगी व उसे लाने अंतर्राष्ट्रीय ड्रग्स तस्करों के गिरोह के तार शामली जिले के कस्बा कैराना और मुजफ्फरनगर से जुड़ रहे हैं। नारकोटिक्स कंट्रोल ब्यूरो एनसीबी दिल्ली की टीम ने गुरुवार को कैलाना से दो लोगों को हिरासत में
+```
+
+
+### Inference Demo:
+
+Application is hosted on 🤗 space and can be accessed at [SAR](https://huggingface.co/spaces/d0r1h/Hindi_News_Summarizer)
+
+### Website Supported
+
+- [x] [Amarujala](https://www.amarujala.com)
+
+
+#### ToDO
+
+- [ ] Add support for following website
+    - [ ] [aajtak](https://www.aajtak.in/)
+    - [ ] [ndtv](https://ndtv.in/)  
+- [ ] Foramtting Hindi text for wordcloud
