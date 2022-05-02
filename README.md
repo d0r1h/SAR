@@ -14,8 +14,14 @@
     <img alt="tweet" src="https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2Fd0r1h%2FSAR%2F">
     </a>
   </p>
+  
+ <h4 align="center">
+    <p>State-of-the-art Summarization methods for Hindi in 🤗 </p>
+</h4>
 
-## SAR
+<h3 align="center">
+    <a href="https://hf.co/course"><img src="https://github.com/d0r1h/SAR/blob/main/assets/sar_app.png", width="550"></a>
+</h3>
 
 SAR (सार) in Hindi means summary. This repository contains my work on Text Summarization 
 
