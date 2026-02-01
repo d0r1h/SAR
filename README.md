@@ -42,10 +42,10 @@ SAR (सार) in Hindi means summary. This repository contains my work on Hind
 
 * Inference results are on 2k sample data.
 
-|Model | Checkpoint | Rouge-2[f_score] | Inference time | 
-|--- | --- | --- | --- |
-|BART | [ai4bharat/IndicBART](https://huggingface.co/ai4bharat/IndicBART) | 21.48 | 20min 27s |
-|T5 | [csebuetnlp/mT5_multilingual_XLSum](https://huggingface.co/csebuetnlp/mT5_multilingual_XLSum) | 20.21 | 45min 54s|
+|Model | Checkpoint | Rouge-2[f_score] | 
+|--- | --- | --- |
+|BART | [ai4bharat/IndicBART](https://huggingface.co/ai4bharat/IndicBART) | 21.48 | 
+|T5 | [csebuetnlp/mT5_multilingual_XLSum](https://huggingface.co/csebuetnlp/mT5_multilingual_XLSum) | 20.21 | 
 
 
 ### Project Pipeline
