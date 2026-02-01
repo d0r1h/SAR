@@ -25,6 +25,7 @@
 
 SAR (सार) in Hindi means summary. This repository contains my work on Hindi Text Summarization on news article.  
 
+Access complete dataset on [huggingface](https://huggingface.co/datasets/d0r1h/HindiNewSummaries)
 
 ### Notebook:
 
